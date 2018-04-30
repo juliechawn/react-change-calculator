@@ -5,7 +5,7 @@
   "main": "server/index.js",
   "scripts": {
     "build": "npm run && webpack",
-    "start": "npm run build && node server/index.js",
+    "start": "webpack && node server/index.js",
     "lint": "eslint .",
     "test": "npm run build && mocha test/.setup.js test/*.spec.js"
   },
@@ -14,7 +14,7 @@
     "bluebird": "^3.5.0",
     "bootstrap": "^4.0.0",
     "chai": "^3.5.0",
-    "electron": "^1.8.2",
+    "electron": "^1.8.3",
     "expect": "^1.20.2",
     "express": "^4.15.3",
     "gulp": "^3.9.1",
